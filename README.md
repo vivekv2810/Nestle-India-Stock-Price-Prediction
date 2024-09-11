@@ -48,3 +48,47 @@ Before applying models, the following preprocessing steps were applied:
 
 4. **Creating Sequences**: For the LSTM model, we created sequences of 60 timesteps (days) to predict the next value.
 
+## Models
+
+## LSTM
+
+- **Model Type**: Sequential LSTM Neural Network
+
+- **Architecture**: 2 LSTM layers, followed by dense layers
+
+- **Loss Function**: Mean Squared Error (MSE)
+
+- **Optimizer**: Adam
+
+```
+model_lstm = Sequential([
+    LSTM(50, return_sequences=True, input_shape=(SEQ_LENGTH, 1)),
+    LSTM(50, return_sequences=False),
+    Dense(25),
+    Dense(1)
+])
+```
+
+## Linear Regression
+
+- **Model Type**: Linear Regression using sklearn
+
+- **Target**: Predicting stock price based on historical data
+
+```model_lr = LinearRegression()```
+
+## KNN
+
+**Model Type**: K-Nearest Neighbors using sklearn
+
+**Target**: Predicting stock price based on nearest neighbors
+
+```model_knn = KNeighborsRegressor(n_neighbors=5)```
+
+## K-Means Clustering
+
+**Model Type**: K-Means Clustering using sklearn
+
+**Target**: Identifying clusters in stock price behavior
+
+```kmeans = KMeans(n_clusters=3, random_state=0)```
