@@ -162,3 +162,10 @@ python src/kmeans_clustering.py
 
 3. View stock analysis and prediction results in charts and metrics.
 
+## Contributing
+
+Feel free to submit pull requests or open issues to discuss any features or improvements. All contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License.
