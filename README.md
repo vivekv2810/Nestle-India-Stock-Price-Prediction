@@ -143,3 +143,22 @@ git clone https://github.com/yourusername/nestle-india-stock-prediction.git
 pip install -r requirements.txt
 ```
 
+## Usage
+
+1. Load the Jupyter Notebook:
+
+```
+jupyter notebook stock_analysis.ipynb
+```
+
+2. Run individual model scripts:
+
+```
+python src/lstm_model.py
+python src/linear_regression.py
+python src/knn_model.py
+python src/kmeans_clustering.py
+```
+
+3. View stock analysis and prediction results in charts and metrics.
+
