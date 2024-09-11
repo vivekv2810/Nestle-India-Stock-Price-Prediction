@@ -139,4 +139,7 @@ git clone https://github.com/yourusername/nestle-india-stock-prediction.git
 
 2. Install dependencies:
 
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
+
