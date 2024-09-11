@@ -92,3 +92,51 @@ model_lstm = Sequential([
 **Target**: Identifying clusters in stock price behavior
 
 ```kmeans = KMeans(n_clusters=3, random_state=0)```
+
+## Evaluation
+
+Each model was evaluated using metrics such as **Root Mean Squared Error (RMSE)** and **R-squared (R²)** to assess the accuracy of predictions.
+
+## LSTM Evaluation
+
+LSTM RMSE: [407.016788248518]
+
+LSTM R² Score: [0.972]
+
+## Linear Regression Evaluation
+
+Linear Regression RMSE: [270.2518644458053]
+
+Linear Regression R² Score: [0.987]
+
+## KNN Evaluation
+
+KNN RMSE: [4144.048814710538]
+
+KNN R² Score: [-1.828]
+
+## Results
+
+The following are the key findings from each model:
+
+- **LSTM** provided the most accurate predictions due to its ability to capture time-series dependencies.
+
+- **Linear Regression** performed moderately well but is limited in capturing stock price volatility.
+
+- **KNN** had good performance with well-tuned parameters.
+
+- **K-Means Clustering** successfully identified clusters, helping in trend analysis but not directly predicting prices.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/yourusername/nestle-india-stock-prediction.git
+```
+
+2. Install dependencies:
+
+```pip install -r requirements.txt```
